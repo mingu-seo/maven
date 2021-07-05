@@ -23,6 +23,7 @@ public class MemberController {
 	@RequestMapping("/member/index.do")
 	public String index(Model model) {
 		System.out.println("COMMIT TEST");
+		System.out.println("서민구");
 		List<MemberVo> list = service.selectList();
 		model.addAttribute("list", list);
 		return "member/index";
